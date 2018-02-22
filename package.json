@@ -1,0 +1,36 @@
+{
+  "name": "home-assistant-config-parser",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./dist/lib/index.js",
+  "types": "./dist/lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josa42/home-assistant-config-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/josa42/home-assistant-config-parser/issues"
+  },
+  "homepage":"https://github.com/josa42/home-assistant-config-parser#readme",
+  "scripts": {
+    "build": "tsc",
+    "test": "mocha -r ts-node/register test/**/*-spec.ts",
+    "prepublishOnly": "rm -rf dist && tsc -p ./ --outDir dist/"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "~3.10.0"
+  },
+  "devDependencies": {
+    "@types/chai": "~4.1.2",
+    "@types/js-yaml": "~3.10.1",
+    "@types/mocha": "~2.2.48",
+    "@types/node": "~9.4.6",
+    "chai": "~4.1.2",
+    "mocha": "~5.0.1",
+    "ts-node": "~5.0.0",
+    "typescript": "~2.7.2",
+    "typings": "~2.1.1"
+  }
+}
